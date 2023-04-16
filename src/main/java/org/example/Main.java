@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        List<BankAcc> lista = new ArrayList<>();
+        List<BankAcc> bankList = new ArrayList<>();
 
         System.out.println("System bankowy xXx - Made by SW");
         System.out.println("Wybierz co chcesz zrobić poniżej:");
@@ -31,10 +31,10 @@ public class Main {
                 String currency = input.next();
                 BigDecimal v2 = new BigDecimal(value);
 
-                lista.add(new BankAcc(v2, currency));
+                bankList.add(new BankAcc(v2, currency));
             }
 
-            System.out.println(Arrays.toString(lista.toArray()));
+            System.out.println(Arrays.toString(bankList.toArray()));
         }
     }
 }
