@@ -35,6 +35,8 @@ public class Main {
             }
 
             System.out.println(Arrays.toString(bankList.toArray()));
+        } else {
+            System.out.println("Działa tylko opcja nr 1!! Kończę program");
         }
     }
 }
